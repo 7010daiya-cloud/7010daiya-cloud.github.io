@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2B4C6F">
+<title>アプリ一覧</title>
+<style>
+  :root{--navy:#2B4C6F;--navy2:#3E6E96;--card:#fff;--text:#243240;--muted:#7a8696;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Meiryo UI","Hiragino Sans","Yu Gothic UI",sans-serif;
+    color:var(--text);background:linear-gradient(160deg,#2B4C6F,#1f3a55);min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;padding:32px 16px 60px;}
+  h1{color:#fff;font-size:22px;margin:14px 0 4px;letter-spacing:1px}
+  .sub{color:#bcd0e2;font-size:13px;margin:0 0 26px}
+  .wrap{width:100%;max-width:460px;display:flex;flex-direction:column;gap:14px}
+  a.card{display:flex;align-items:center;gap:14px;background:var(--card);border-radius:16px;
+    padding:16px 18px;text-decoration:none;color:var(--text);box-shadow:0 6px 18px rgba(0,0,0,.18);
+    transition:transform .08s}
+  a.card:active{transform:scale(.98)}
+  .ico{font-size:34px;width:52px;height:52px;flex:none;display:flex;align-items:center;
+    justify-content:center;background:#EAF2F8;border-radius:14px}
+  .txt{flex:1;min-width:0}
+  .name{font-size:17px;font-weight:800;color:var(--navy)}
+  .desc{font-size:12px;color:var(--muted);margin-top:2px}
+  .arrow{color:#b7c3cf;font-size:22px;flex:none}
+  footer{color:#9fb3c6;font-size:11px;margin-top:32px}
+</style>
+</head>
+<body>
+  <h1>アプリ一覧</h1>
+  <p class="sub">使いたいものをタップしてください</p>
+  <div class="wrap">
+    <a class="card" href="./bento-calendar/">
+      <span class="ico">🍱</span>
+      <span class="txt">
+        <span class="name">お弁当注文カレンダー</span>
+        <span class="desc">お弁当の注文数・スタッフ管理（社員共有）</span>
+      </span>
+      <span class="arrow">›</span>
+    </a>
+    <a class="card" href="./car-parts-quiz/">
+      <span class="ico">🚗</span>
+      <span class="txt">
+        <span class="name">カーパーツマスター</span>
+        <span class="desc">車の部品を覚えるクイズゲーム</span>
+      </span>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+  <footer>7010daiya-cloud</footer>
+</body>
+</html>
